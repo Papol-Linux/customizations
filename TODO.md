@@ -7,3 +7,7 @@
 
 - customize
 - copy config files to skel folder
+
+## installer
+
+- custom installer images (ubiquity)
