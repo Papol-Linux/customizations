@@ -67,7 +67,7 @@
   </wallpaper>
   <wallpaper deleted="false">
     <name>Lion</name>
-    <filename>/usr/local/share/backgrounds/Lion.jpg</filename>
+    <filename>/usr/local/share/backgrounds/Lion.png</filename>
     <options>zoom</options>
     <shade_type>solid</shade_type>
     <pcolor>#ffffff</pcolor>
