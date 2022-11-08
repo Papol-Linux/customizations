@@ -64,7 +64,7 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/user/Pictures/Wallpapers/dd8iu5z-dbdb3432-88bd-4a99-87ca-acf4e432c7cd.jpg'
+picture-uri='file:///usr/share/backgrounds/Mojave-Night.jpg'
 primary-color='#000000'
 secondary-color='#000000'
 
