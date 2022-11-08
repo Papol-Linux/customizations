@@ -22,7 +22,7 @@ sudo apt install dconf
 dconf load / < full-backup
 ```
 
-# Wallpapers
+# backgrounds
 
 - Move the wallpapers to `/usr/share/backgrounds/`
 
@@ -34,4 +34,32 @@ mv ./backgrounds/*.jpg /usr/share/backgrounds/
 
 ```bash
 mv ./trusty-wallpapers.xml /usr/share/gnome-background-properties/trusty-wallpapers.xml
+```
+
+# skel
+
+
+Has all the files that comes to the home directory of every user by default. Modifications done include:
+
+- Themes
+- Icons
+- Cursors
+- Plank Dock icon themes
+
+### `./.icons`
+
+Extract the `*.tar` archives inside `./.icons`
+
+```bash
+cd ./.icons
+./extract.sh
+```
+
+or
+```bash
+cd ./.icons
+tar -xvf ./Cupertino-Catalina.tar
+tar -xvf ./capitaine-cursors-r4.tar
+rm ./Cupertino-Catalina.tar
+rm ./capitaine-cursors-r4.tar
 ```
