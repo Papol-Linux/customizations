@@ -21,3 +21,17 @@ dconf dump / > full-backup
 sudo apt install dconf
 dconf load / < full-backup
 ```
+
+# Wallpapers
+
+- Move the wallpapers to `/usr/share/backgrounds/`
+
+```bash
+mv ./backgrounds/*.jpg /usr/share/backgrounds/
+```
+
+- Move the `trusty-wallpapers.xml` file to  `/usr/share/gnome-background-properties/`
+
+```bash
+mv ./trusty-wallpapers.xml /usr/share/gnome-background-properties/trusty-wallpapers.xml
+```
