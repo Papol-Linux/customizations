@@ -4,7 +4,7 @@
 
 the base structure of customization. This repository is like a template to start working on. Clone this first and start working (if needed)
 
-# install
+# install stuff
 
 Make sure to install these **essential** packages:
 
@@ -91,7 +91,7 @@ Has all the files that comes to the home directory of every user by default. Mod
 - Cursors
 - Plank Dock icon themes
 
-### `./.icons`
+## `./.icons`
 
 - change directory
 
@@ -99,7 +99,7 @@ Has all the files that comes to the home directory of every user by default. Mod
 cd ./.icons
 ```
 
-Extract the `*.tar` archives inside `./.icons`
+- Extract the `*.tar` archives inside `./.icons`
 
 ```bash
 ./extract.sh
@@ -114,7 +114,21 @@ rm ./Cupertino-Catalina.tar
 rm ./capitaine-cursors-r4.tar
 ```
 
+## `./`
+
+- Come back to `skel` folder
+
+- Move everything to main skel folder
+
+```bash
+mv ./* /etc/skel
+```
+
 # dconf
+
+### THIS PART IS ERROURNOUS
+
+- maybe create a script that will run once when the new user boots the computer for the first time by adding it to auostart and self delete that file or create some monitoring mechanism to not run it again
 
 - change directory
 
