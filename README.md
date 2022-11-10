@@ -8,10 +8,22 @@ the base structure of customization. This repository is like a template to start
 
 Make sure to install these **essential** packages:
 
+1. Update the repos and Upgrade all the packages
+
+```bash
+apt update && sudo apt upgrade -y
+```
+
 - ubiquity
 
 ```bash
-apt install ubiquity
+apt install ubiquity -y
+```
+
+- wget
+
+```bash
+apt install wget -y
 ```
 
 - dconf-editor:
@@ -46,6 +58,12 @@ wget "http://archive.ubuntu.com/ubuntu/pool/universe/g/gnome-tweaks/gnome-tweaks
 
 # backgrounds
 
+- change directory
+
+```bash
+cd ./backgrounds
+```
+
 - Move the wallpapers to `/usr/share/backgrounds/`
 
 ```bash
@@ -60,6 +78,12 @@ mv ./trusty-wallpapers.xml /usr/share/gnome-background-properties/trusty-wallpap
 
 # skel
 
+- change directory
+
+```bash
+cd ./skel/
+```
+
 Has all the files that comes to the home directory of every user by default. Modifications done include:
 
 - Themes
@@ -69,29 +93,33 @@ Has all the files that comes to the home directory of every user by default. Mod
 
 ### `./.icons`
 
-Extract the `*.tar` archives inside `./.icons`
+- change directory
 
 ```bash
 cd ./.icons
+```
+
+Extract the `*.tar` archives inside `./.icons`
+
+```bash
 ./extract.sh
 ```
 
 or
 
 ```bash
-cd ./.icons
 tar -xvf ./Cupertino-Catalina.tar
 tar -xvf ./capitaine-cursors-r4.tar
 rm ./Cupertino-Catalina.tar
 rm ./capitaine-cursors-r4.tar
 ```
 
-## dconf
+# dconf
 
-- Dump: save all the customizations done to a single file, where `full-backup` is the filename
+- change directory
 
 ```bash
-dconf dump / > full-backup
+cd ./dconf
 ```
 
 - Load: load a previously saved dConf file, where `full-backup` is the filename
@@ -99,3 +127,16 @@ dconf dump / > full-backup
 ```bash
 dconf load / < full-backup
 ```
+
+<ul>
+<li>
+    <details>
+    <summary>Dump:</summary>
+    <br>
+    save all the customizations done to a single file, where <i>full-backup</i> is the filename
+    <br>
+    <br>
+    <pre>dconf dump / > full-backup</pre>
+    </details>
+</li>
+</ul>
