@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Panther Launcher
+Comment=Launcher
+Exec=panther_launcher
+Icon=/home/user/.icons/1080x1080-black.png
+Path=
+Terminal=false
+StartupNotify=true
