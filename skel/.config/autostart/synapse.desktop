@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Version=1.0
 Type=Application
-Name=Plank
+Name=Synapse
 Comment=Search everything you do.
 Exec=synapse
 OnlyShowIn=XFCE;
