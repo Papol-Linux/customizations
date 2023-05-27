@@ -31,3 +31,9 @@ cp -f .bashrc ~/.bashrc
 ```
 cp -f .bash_aliases ~/.bash_aliases
 ```
+
+- xfce Settings: `.config/xfce4/`
+
+```
+cp -f ./.config/xfce4 ~/.config/xfce4
+```
